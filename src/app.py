@@ -8,16 +8,16 @@ from folium.plugins import MarkerCluster
 from dash.exceptions import PreventUpdate
 from plotly.subplots import make_subplots
 
-# Load your data
-df = pd.read_csv(r"C:\Users\Qwon\Desktop\Clients\food4e\Term1\wrangle\dfw1w2w3.csv")
-dmap = pd.read_csv(r"C:\Users\Qwon\Desktop\Clients\food4e\Term1\wrangle\map2.csv")
+# Loading your data
+df = pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/dfw1w2w3.csv")
+dmap =pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/map2.csv")
 
 # Convert 'Date' column to datetime with the correct format
 # df['Date'] = pd.to_datetime(df['Date'], dayfirst=True, format='%d/%m/%y')  # Use '%y' for 2-digit year
 
-# Generate the Folium map and save it as 'schools_map.html'
+# Folium map
 def generate_folium_map():
-     # Define a color map for each Division
+     # color map for each Division
     division_colors = {
         'Githunguri  i': 'blue',
         'Githunguri  II': 'green',
@@ -25,13 +25,13 @@ def generate_folium_map():
         'Cluster 12': 'purple',
     }
 
-    # Calculate bounds for the big rectangle
+    #  bounds for the big rectangle for kitchen
     min_lat = dmap['lat'].min() - 0.01
     max_lat = dmap['lat'].max() + 0.01
     min_lon = dmap['lon'].min() - 0.01
     max_lon = dmap['lon'].max() + 0.01
 
-    # Create a folium map centered around the average latitude and longitude
+    #  a folium map centered around the average latitude and longitude
     center_lat = dmap['lat'].mean()
     center_lon = dmap['lon'].mean()
     m = folium.Map(
@@ -43,7 +43,7 @@ def generate_folium_map():
         dragging=True
     )
 
-    # Add markers and rectangles
+    # markers and rectangles
     for index, row in dmap.iterrows():
         color = division_colors.get(row['Division'], 'gray')  # Default to gray if Division not in color map
         folium.Marker(
@@ -53,7 +53,7 @@ def generate_folium_map():
             icon=folium.Icon(color=color)
         ).add_to(m)
 
-        # DivIcon for the school name
+        # Div Icon for the school name
         folium.Marker(
             location=[row['lat'], row['lon']],
             icon=folium.DivIcon(html=f"""<div style="font-size: 12px; color: {color}; white-space: nowrap;">{row['School']}</div>""")
