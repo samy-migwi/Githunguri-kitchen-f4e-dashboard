@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: g1_dashboard
+    ports:
+      -  "5001:8051"
+    volumes:
+      - .:/src
+    command: python src/app.py     
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  sraper:
+      build: .
+      container_name: g1_scraper
+      ports:
+        - "8050:8050"
+      volumes:
+        - .:/src       
+      command: python src/dashex.py
+      environment:
+        - PYTHONUNBUFFERED=1

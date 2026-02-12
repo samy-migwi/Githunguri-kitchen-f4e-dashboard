@@ -9,7 +9,8 @@ from dash.exceptions import PreventUpdate
 from plotly.subplots import make_subplots
 
 # Loading your data
-df = pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/dfw1w2w3.csv")
+#df = pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/dfw1w2w3.csv")
+df=pd.read_csv(r"C:\Users\Administrator\Desktop\ds\f4e\githunguri1\Githunguri-kitchen-f4e-dashboard\data\data_processed\df_upto_09_01_26.csv")
 dmap =pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/map2.csv")
 
 # Convert 'Date' column to datetime with the correct format
@@ -374,5 +375,5 @@ def update_dashboard(selected_date, selected_week):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
+    app.run(debug=True, host='0.0.0.0', port=8051)
    

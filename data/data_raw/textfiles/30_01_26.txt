@@ -1,0 +1,1122 @@
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:00 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Githioro Primary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 335
+Actual meals served:  343
+Successful Taps: 315
+F4E /School/Sponsored Others: 28
+Teachers:  0
+Staff meals: 2
+Failed taps: 7
+Manual deductions: 10
+New registration: 0
+New tags replaced: 3
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:33
+To: 30 Jan 2026, 13:35:37
+Comment 1: The food was appetising
+Comment 2: Line management was organised assisted by tod
+Comment 3: Failed taps increased from 5 to 7, some parents forgot to top up their accounts on time
+Comment 4:Successful taps decreased from 347 to  343, this was due to increased number of failed taps
+Next Day's Projection:
+Students: 345
+Teachers: 0
+Staff: I'm projecting this number because I hope numbers will stabilise.
+Comment on projections: I'm projecting this number because I hope numbers will stabilise.
+Report sent by: @GITHIORO COMPREHENSIVE
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:45 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gitombo Primary School
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 180
+Actual meals served:  181
+Successful Taps: 168
+F4E /School/Sponsored Others: 13
+Teachers:  0
+Staff meals: 2
+Failed taps: 0
+Manual deductions: 19
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:17
+To: 30 Jan 2026, 13:30:22
+Comment 1: Food was delicious.
+Comment 2: Queue was manageable by the help of teacher on duty.
+Comment 3: Today failed tap was 0 a decrease of 1 from 1 yesterday  parents did top up on time.
+Comment 4:Actual meals served today was 181 an increase of 2 from 179 learners show up well today.
+Next Day's Projection:
+Students: 180
+Teachers: 0
+Staff: Projecting 180 hopefully it will be the number on Monday.
+Comment on projections: Projecting 180 hopefully it will be the number on Monday.
+Report sent by: @Veronica Mwaura -S/C- Gitombo primary
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:23 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kiawairia Primary
+Menu : Rice and beans
+Date:2026-01-30
+Projected no of kids: 140
+Actual meals served:  138
+Successful Taps: 123
+F4E /School/Sponsored Others: 15
+Teachers:  2
+Staff meals: 2
+Failed taps: 7
+Manual deductions: 24
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 1Kgs
+Stew: 1 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 4
+Tapping Time:
+Started at: 30 Jan 2026, 12:00:10
+To: 30 Jan 2026, 13:30:16
+Comment 1: Food was delicious and hot
+Comment 2: Lines were neat and organized
+Comment 3: We had 7 failed taps an increase from 5 some parents didn't top up on time
+Comment 4:We had 123 successful taps a decrease from 130 turn was low
+Next Day's Projection:
+Students: 140
+Teachers: 2
+Staff: Expecting turn out to be good and insufficient balances to be topped up
+Comment on projections: Expecting turn out to be good and insufficient balances to be topped up
+Report sent by: @Mary kimani SC kiawairia comprehensive school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:44 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Ihiga Primary
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 160
+Actual meals served:  157
+Successful Taps: 143
+F4E /School/Sponsored Others: 14
+Teachers:  0
+Staff meals: 2
+Failed taps: 4
+Manual deductions: 3
+New registration: 0
+New tags replaced: 3
+Food Remaining:
+Rice: 2Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 5
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:28
+To: 30 Jan 2026, 13:15:34
+Comment 1: Food was Enough
+Comment 2: Queues were manageable with assistance from teacher on duty.
+Comment 3: Failed taps were 4. An increase from yesterday's 3.Parents didn't top up their accounts on time.
+Comment 4:Successful taps were 157 a decrease from yesterday's which was 161.Today's turn up was lower than yesterday.
+Next Day's Projection:
+Students: 160
+Teachers: 0
+Staff: Projected 160.Expecting the same turn up.
+Comment on projections: Projected 160.Expecting the same turn up.
+Report sent by: @Naomi SC-Ihiga Comprehensive
+Screenshot_20260130-132713.png
+Screenshot_20260130-132713.png
+View PNG in Slack
+
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:54 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Githiga Primary
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 410
+Actual meals served:  428
+Successful Taps: 385
+F4E /School/Sponsored Others: 43
+Teachers:  0
+Staff meals: 3
+Failed taps: 28
+Manual deductions: 17
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:18
+To: 30 Jan 2026, 13:35:23
+Comment 1: Food was delicious :yum:
+Comment 2: Lines Management was smooth
+Comment 3: Failed tap increased  from 26 to 28.parents forgot to top up.
+Comment 4:Actual taps increased  from 421 to 428. Students turnout was good.
+Next Day's Projection:
+Students: 420
+Teachers: 0
+Staff: We expect the students number turnout to remain  constant since  turnout has stablised.
+Comment on projections: We expect the students number turnout to remain  constant since  turnout has stablised.
+Report sent by: @Nicholas-SC - Githiga Comprehensive
+20260130_134723.jpg
+20260130_134723.jpg
+Shared by Nicholas.?ndungu on Jan 30th
+
+
+
+School Post Tapping Repor
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:46 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kiawairia Secondary School
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 55
+Actual meals served:  51
+Successful Taps: 51
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 2
+Failed taps: 4
+Manual deductions: 3
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 1Kgs
+Stew: 1 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 4
+Tapping Time:
+Started at: 30 Jan 2026, 13:22:00
+To: 30 Jan 2026, 13:33:10
+Comment 1: Food was appetizing and yummy
+Comment 2: Line management was transitioning good assisted by TOD
+Comment 3: Number of failed taps increased from 1 to 4 parents didn't top up their accounts on time
+Comment 4:Number of actual meals decreased from 57 to 51 ,,4 students had insufficient accounts and also some students were absent today
+Next Day's Projection:
+Students: 55
+Teachers: 0
+Staff: Projecting this number hoping those who had insufficient accounts will top up their accounts on time and also hoping students will report fully on Monday
+Comment on projections: Projecting this number hoping those who had insufficient accounts will top up their accounts on time and also hoping students will report fully on Monday
+Report sent by: @Patrick Kariuki Kiawaria secondary school Tapper
+IMG_20260130_134326.jpg
+IMG_20260130_134326.jpg
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:09 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gikang'a Kageche Secondary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 310
+Actual meals served:  299
+Successful Taps: 299
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 3
+Failed taps: 9
+Manual deductions: 27
+New registration: 0
+New tags replaced: 2
+Food Remaining:
+Rice: 2Kgs
+Stew: 2 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 5
+Tapping Time:
+Started at: 30 Jan 2026, 13:10:04
+To: 30 Jan 2026, 13:45:09
+Comment 1: Food was delicious
+Comment 2: Queue was smoothly managed by TOD
+Comment 3: Today's failed taps was the same as yesterday which was 9
+Comment 4:Today's successful taps decreased from 309 to 299....30 students went for games
+Next Day's Projection:
+Students: 330
+Teachers: 0
+Staff: We expect high turn out on Monday
+Comment on projections: We expect high turn out on Monday
+Report sent by: @Pauline Gatimu
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:52 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gitiha Secondary School
+Menu : White rice and beans stew
+Date:2026-01-30
+Projected no of kids: 150
+Actual meals served:  144
+Successful Taps: 144
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 2
+Failed taps: 7
+Manual deductions: 20
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 13:10:32
+To: 30 Jan 2026, 13:41:46
+Comment 1: Food was tasty
+Comment 2: Queue was smooth
+Comment 3: Increased failed taps compared to the previous day
+Comment 4:The successful taps were constant
+Next Day's Projection:
+Students: 150
+Teachers: 0
+Staff: Normal school routine
+Comment on projections: Normal school routine
+Report sent by: @Jecinta muthoni Gitonga
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:32 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gatitu Primary
+Menu : RICE AND BEANS.
+Date:2026-01-30
+Projected no of kids: 380
+Actual meals served:  370
+Successful Taps: 331
+F4E /School/Sponsored Others: 39
+Teachers:  0
+Staff meals: 3
+Failed taps: 16
+Manual deductions: 22
+New registration: 0
+New tags replaced: 2
+Food Remaining:
+Rice: 1Kgs
+Stew: 1 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 12
+Tapping Time:
+Started at: 30 Jan 2026, 12:15:57
+To: 30 Jan 2026, 14:05:04
+Comment 1: Food was delicious :yum:..
+Comment 2: Learners were well organized.
+Comment 3: An increase from 8 to 16...some accounts had low to no funds at all.
+Comment 4:Successful taps also decreased by 4 from 374 to 370 due to accounts not being funded timely..
+Next Day's Projection:
+Students: 380
+Teachers: 1
+Staff: Am anticipating more students to show up for learning thus feed with us.
+Comment on projections: Am anticipating more students to show up for learning thus feed with us.
+Report sent by: @Wambui ikonya -sc- Gatitu comprehensive
+Screenshot_20260130-142304.png
+Screenshot_20260130-142304.png
+Shared by Wambui Ikonya on Jan 30th
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:46 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kiambururu Secondary School
+Menu : Rice with beans
+Date:2026-01-30
+Projected no of kids: 205
+Actual meals served:  190
+Successful Taps: 190
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 3
+Failed taps: 2
+Manual deductions: 11
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 1Kgs
+Stew: 2 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 15
+Tapping Time:
+Started at: 30 Jan 2026, 13:15:59
+To: 30 Jan 2026, 13:30:25
+Comment 1: The food was delicious
+Comment 2: Line management was smooth with the help of TOD
+Comment 3: Failed taps today reduce to  2 compared to previous which was 4.
+Comment 4:Successful taps was 190 a decrease from  yesterday which was 204, some students did not report to school today.
+Next Day's Projection:
+Students: 205
+Teachers: 0
+Staff: We expect more students on Monday
+Comment on projections: We expect more students on Monday
+Report sent by: @Salome-kiambururu secondary school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:58 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gathaithi Secondary School
+Menu : Rice and beans
+Date:2026-01-30
+Projected no of kids: 105
+Actual meals served:  102
+Successful Taps: 102
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 2
+Failed taps: 3
+Manual deductions: 8
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0.9Kgs
+Stew: 1.1 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 3
+Tapping Time:
+Started at: 30 Jan 2026, 13:20:33
+To: 30 Jan 2026, 13:45:40
+Comment 1: Food was delicious
+Comment 2: Queuing was good
+Comment 3: We had 3  failed taps a drop from yesterday's 5 due to early topping up by parents
+Comment 4:We had 102 successful taps a drop from yesterday's 111 due failure of students not reporting to school
+Next Day's Projection:
+Students: 110
+Teachers: 0
+Staff: We expect many students to attend school on Monday
+Comment on projections: We expect many students to attend school on Monday
+Report sent by: @Joseph mburu nga'ang'a
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:51 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Mukuyu Secondary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 320
+Actual meals served:  310
+Successful Taps: 310
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 3
+Failed taps: 17
+Manual deductions: 10
+New registration: 0
+New tags replaced: 2
+Food Remaining:
+Rice: 10Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 20
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:35
+To: 30 Jan 2026, 13:20:00
+Comment 1: Food was hot and delicious
+Comment 2: Queue was well managed
+Comment 3: Failed taps increases from 16 to 17 parents didn't top up their account
+Comment 4:Successful taps decreases from 320 to 310 some students didn't report to school today
+Next Day's Projection:
+Students: 330
+Teachers: 0
+Staff: Expecting those who didn't top up they top up their account
+Comment on projections: Expecting those who didn't top up they top up their account
+Report sent by: @Mukuyu Secondary School
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:17 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: GATHAITHI PRIMARY
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 470
+Actual meals served:  470
+Successful Taps: 421
+F4E /School/Sponsored Others: 49
+Teachers:  1
+Staff meals: 3
+Failed taps: 16
+Manual deductions: 35
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 00Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:48
+To: 30 Jan 2026, 13:50:15
+Comment 1: Food was great
+Comment 2: One teacher assisted with queue management
+Comment 3: Failed taps increased from 13 to 16.
+Comment 4:Actual meals served dropped from 476 to 470. Some parents failed to top up accounts
+Next Day's Projection:
+Students: 470
+Teachers: 1
+Staff: We expect parents to top up accounts over the weekend
+Comment on projections: We expect parents to top up accounts over the weekend
+Report sent by: @P.C.E.A Gathaithi primary and Junior secondary school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:31 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Githima Primary
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 275
+Actual meals served:  266
+Successful Taps: 240
+F4E /School/Sponsored Others: 26
+Teachers:  4
+Staff meals: 2
+Failed taps: 4
+Manual deductions: 19
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 2Kgs
+Stew: 3 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 7
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:30
+To: 30 Jan 2026, 13:20:34
+Comment 1: The food was delicious
+Comment 2: I managed the queue smoothly with the help of the deputy headteacher.
+Comment 3: We had 4 failed taps which is an increase from yesterday's 2 failed taps.Some accounts were not topped up on time.
+Comment 4:We had 266 actual meals served which is a decrease from yesterday's 275.Some kids were absent today and some accounts were not topped up on time.
+Next Day's Projection:
+Students: 270
+Teachers: 4
+Staff: I am projecting this number because I'm hoping most kids will be present on Monday and accounts will be topped up on time.
+Comment on projections: I am projecting this number because I'm hoping most kids will be present on Monday and accounts will be topped up on time.
+Report sent by: @Brenda kamawe Githima primary and junior secondary school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:35 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kindiga Primary & Junior Secondary School
+Menu : White Rice and Beans
+Date:2026-01-30
+Projected no of kids: 190
+Actual meals served:  186
+Successful Taps: 168
+F4E /School/Sponsored Others: 18
+Teachers:  0
+Staff meals: 2
+Failed taps: 2
+Manual deductions: 20
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 2.0Kgs
+Stew: 3.5 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 5
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:18
+To: 30 Jan 2026, 13:30:26
+Comment 1: The food was Hot and delicious
+Comment 2: Queues were well managed with the help of TOD
+Comment 3: Failed taps decreased to 2 from yesterday's 5,some parents still did not credit their accounts.
+Comment 4:Successful taps decreased to 186 from yesterday's 194,being on a Friday some students were absent.
+Next Day's Projection:
+Students: 190
+Teachers: 00
+Staff: Projecting 190 since it's the estimated turn out.
+Comment on projections: Projecting 190 since it's the estimated turn out.
+Report sent by: @James Mbugua SC Kindiga Primary
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:13 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: PCEA Matuguta Secondary School
+Menu : White Rice and Beans :beans:
+Date:2026-01-30
+Projected no of kids: 125
+Actual meals served:  121
+Successful Taps: 121
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 2
+Failed taps: 7
+Manual deductions: 7
+New registration: 0
+New tags replaced: 2
+Food Remaining:
+Rice: 00Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 13:30:16
+To: 30 Jan 2026, 13:45:23
+Comment 1: Food was hot and delicious the kids enjoyed
+Comment 2: Queues were orderly and well managed by the help of the tod
+Comment 3: Failed taps today were 07 lower than yesterday's 10
+Comment 4:Successful taps today were 121 lower than the projected meals that were 125
+Next Day's Projection:
+Students: 125
+Teachers: 00
+Staff: I am projecting 125 since it's going to be a normal school day
+Comment on projections: I am projecting 125 since it's going to be a normal school day
+Report sent by: @Njeri -Matuguta secondary school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:56 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kiambururu Comprehensive School
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 280
+Actual meals served:  282
+Successful Taps: 250
+F4E /School/Sponsored Others: 32
+Teachers:  0
+Staff meals: 3
+Failed taps: 7
+Manual deductions: 26
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:53
+To: 30 Jan 2026, 13:36:57
+Comment 1: The food was delicious
+Comment 2: Line management was smooth and fast
+Comment 3: Failed taps decreased from 9 to 7.We still have parents who failed to top up on time
+Comment 4:Actual meals served decreased from 286 to 282.This is because of the students who has failed taps
+Next Day's Projection:
+Students: 280
+Teachers: 0
+Staff: We anticipate a good student turnout due to the ongoing exams
+Comment on projections: We anticipate a good student turnout due to the ongoing exams
+Report sent by: @Kiambururu Comprehensive School
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:03 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: PCEA Matuguta Primary & Junior Secondary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 470
+Actual meals served:  474
+Successful Taps: 430
+F4E /School/Sponsored Others: 44
+Teachers:  2
+Staff meals: 3
+Failed taps: 13
+Manual deductions: 28
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:35:03
+To: 30 Jan 2026, 13:35:08
+Comment 1: Food was delicious
+Comment 2: Queue was well managed
+Comment 3: Failed taps were 13 a decrease of 7 taps from yesterday's 20 failed taps. Respective parents had not topped up.
+Comment 4:Actua meals were 474 an increase of 3 taps from yesterday's 471 actual meals . Some students with failed taps topped up.
+Next Day's Projection:
+Students: 470
+Teachers: 3
+Staff: We expect normal school turn up and parents to top up.
+Comment on projections: We expect normal school turn up and parents to top up.
+Report sent by: @Matuguta primary
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:10 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gatina Primary School
+Menu : White rice and beans
+Date:2026-01-30
+Projected no of kids: 455
+Actual meals served:  455
+Successful Taps: 388
+F4E /School/Sponsored Others: 67
+Teachers:  0
+Staff meals: 3
+Failed taps: 8
+Manual deductions: 11
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 20Kgs
+Stew: 3 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 45
+Tapping Time:
+Started at: 30 Jan 2026, 12:36:51
+To: 30 Jan 2026, 13:27:04
+Comment 1: Kids have enjoyed the meal.
+Comment 2: Line was smooth and orderly.
+Comment 3: Failed taps were 8 a decrease compared to yestersday's number of 17, more parent managed to credit accounts on time.
+Comment 4:Actual meal served were 455 a slight decrease compared to yesterday's number of 456.Though we met our projection but on friday turn up is usually low.
+Next Day's Projection:
+Students: 460
+Teachers: 0
+Staff: We expect  kids with insufficient account fund to be credited
+Comment on projections: We expect  kids with insufficient account fund to be credited
+Report sent by: @Kang'ethe Dennis
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:24 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Catholic Archdiocese Of Nairobi Gataka Primary & Junior Secondary
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 300
+Actual meals served:  294
+Successful Taps: 268
+F4E /School/Sponsored Others: 26
+Teachers:  0
+Staff meals: 2
+Failed taps: 8
+Manual deductions: 38
+New registration: 1
+New tags replaced: 1
+Food Remaining:
+Rice: 2Kgs
+Stew: 3 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 8
+Tapping Time:
+Started at: 30 Jan 2026, 12:27:42
+To: 30 Jan 2026, 13:42:01
+Comment 1: The food was delicious
+Comment 2: The queue was well managed by the school coordinator
+Comment 3: The number of failed taps rose from 5 to 8, we reminded kids to request their parents to top up.
+Comment 4:The number of actual meals dropped from 299 to 294, some accounts had insufficient balances.
+Next Day's Projection:
+Students: 295
+Teachers: 0
+Staff: Accounts with insufficient balances will be credited by Monday
+Comment on projections: Accounts with insufficient balances will be credited by Monday
+Report sent by: @Catholic archdiocese of Nairobi Gataka primary school and Junior secondary
+
+20260130_141400.jpg
+Shared by Esther  Kimani - Sc Gataka 
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:50 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Mathanja Priamry School
+Menu : rice and beans
+Date:2026-01-30
+Projected no of kids: 200
+Actual meals served:  201
+Successful Taps: 177
+F4E /School/Sponsored Others: 24
+Teachers:  0
+Staff meals: 2
+Failed taps: 6
+Manual deductions: 14
+New registration: 0
+New tags replaced: 1
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:15:47
+To: 30 Jan 2026, 13:30:54
+Comment 1: food was delicious
+Comment 2: I managed the queue without any assistance
+Comment 3: today we had 6 failed taps an increase compared to yesterday 5. some parents didn't top-up even after reaching out to them.
+Comment 4:today we had 201 actual meals served an increase compared to yesterday. more kids were present today.
+Next Day's Projection:
+Students: 205
+Teachers: 0
+Staff: I expect kids with failed taps to top-up their accounts on time.
+Comment on projections: I expect kids with failed taps to top-up their accounts on time.
+Report sent by: @mathanja primary school
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:50 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kiawaiguru Primary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 230
+Actual meals served:  224
+Successful Taps: 205
+F4E /School/Sponsored Others: 19
+Teachers:  2
+Staff meals: 2
+Failed taps: 4
+Manual deductions: 23
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:14
+To: 30 Jan 2026, 13:30:40
+Comment 1: The food was delicious and the pupils enjoyed the food.
+Comment 2: The queue was orderly managed by the teacher on duty.
+Comment 3: The failed taps for today were 4 and yesterday's Failed taps was 1.The failed taps increased due to parents not topping up their accounts.
+Comment 4:Successful taps for today were 205 and yesterday's successful taps were 207.There was a decrease in successful taps due to parents not topping up their accounts.
+Next Day's Projection:
+Students: 230
+Teachers: 2
+Staff: This projection is because it is expected pupils to report on Monday.
+Comment on projections: This projection is because it is expected pupils to report on Monday.
+Report sent by: @Vanessa
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 1:57 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gathiruini Primary School
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 250
+Actual meals served:  251
+Successful Taps: 223
+F4E /School/Sponsored Others: 28
+Teachers:  0
+Staff meals: 2
+Failed taps: 4
+Manual deductions: 18
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:44
+To: 30 Jan 2026, 13:30:14
+Comment 1: Lunch was delicious
+Comment 2: Line management was good with help of teacher on duty
+Comment 3: Failed taps today were 4 a decrease from 5 this is because parents topped up their accounts on time
+Comment 4:Actual meal served today were 251 an increase from 250 parents topped up their accounts on time
+Next Day's Projection:
+Students: 250
+Teachers: 0
+Staff: Projecting this number because am hoping all the students will be present tomorrow
+Comment on projections: Projecting this number because am hoping all the students will be present tomorrow
+Report sent by: @Catherine Wanjiru
+
+IMG_20260130_135434.jpg
+View JPEG in Slack
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:31 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Gathangari Primary School
+Menu : Rice and beans
+Date:2026-01-30
+Projected no of kids: 410
+Actual meals served:  403
+Successful Taps: 369
+F4E /School/Sponsored Others: 34
+Teachers:  0
+Staff meals: 3
+Failed taps: 11
+Manual deductions: 5
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 10Kgs
+Stew: 2 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 20
+Tapping Time:
+Started at: 30 Jan 2026, 12:20:59
+To: 30 Jan 2026, 13:30:08
+Comment 1: Food was hot and delicious
+Comment 2: The queue was smoothly managed by the T.O.D
+Comment 3: Failed taps increased from 8 to 11. Some parents forgot to top up on time and have urged kids to remind them
+Comment 4:Successful taps decreased from 410 to 403.Some parents did not top up on time
+Next Day's Projection:
+Students: 415
+Teachers: 0
+Staff: We expect the failed taps to reduce by parents topping up the accounts
+Comment on projections: We expect the failed taps to reduce by parents topping up the accounts
+Report sent by: @PCEA GATHANGARI COMPREHENSIVE SCHOOL
+School Post Tapping Report - Githunguri
+WORKFLOW 
+tap2eat-ops-githunguri-report-center
+Jan 30th at 2:01 PM
+Cluster: Githunguri 1
+Kitchen :  Githunguri Kitchen
+School: Kanyore Primary School
+Menu : RICE & BEANS
+Date:2026-01-30
+Projected no of kids: 630
+Actual meals served:  623
+Successful Taps: 581
+F4E /School/Sponsored Others: 42
+Teachers:  3
+Staff meals: 3
+Failed taps: 28
+Manual deductions: 39
+New registration: 1
+New tags replaced: 7
+Food Remaining:
+Rice: 10Kgs
+Stew: 10 Kgs
+Supplementary meals: 0
+No. of kids served food remaining: 30
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:32
+To: 30 Jan 2026, 13:30:36
+Comment 1: Food was delicious
+Comment 2: Line management was organized
+Comment 3: Number of failed taps increased from 22 to 28 as more parents had insufficient balances.Reminded the kids to remind their parents to top up.
+Comment 4:Number of successful taps decreased from 632 to 623. This can be attributed to increase in failed taps. Also some students were sent home and never returned.
+Next Day's Projection:
+Students: 640
+Teachers: 5
+Staff: We anticipate to feed 640 as those who were sent home for fees today are expected to be in school on Monday.
+Comment on projections: We anticipate to feed 640 as those who were sent home for fees today are expected to be in school on Monday.
+Report sent by: @Haron Muiruri,SL Kanyore Primary
+
+Screenshot_20260130-135612.
+School Post Tapping Report - Kiambu Kitchen
+WORKFLOW 
+tap2eat-ops-kiambu-kitchen-reports
+Jan 30th at 2:22 PM
+Kitchen :  Kiambu Kitchen
+School: Ciiko Primary
+Menu : Rice and Beans
+Date:2026-01-30
+Projected no of kids: 975
+Actual meals served:  970
+Successful Taps: 889
+F4E /School/Sponsored Others: 71
+Teachers:  0
+Staff meals: 5
+Failed taps: 11
+New registration: 0
+New tags replaced: 6
+Food Remaining:
+Rice: 5Kgs
+Stew: 10 Kgs
+No. of kids who missed food: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:30:07
+To: 30 Jan 2026, 13:25:24
+Comment 1: The food was delicious and enough
+Comment 2: Queue was well managed by teacher on duty
+Comment 3: Failed taps were increased from 6 to11
+Comment 4:Successful taps were decreased from 911 to 899
+Next Day's Projection:
+Students: 980
+Teachers: 0
+Staff: 5
+Comment on Projection: We expect a slightly higher turnout than today.
+Report sent by: @Ciiko Comprehensive school -SL- Samy Migwi
+School Post Tapping Report - Kiambu Kitchen
+WORKFLOW 
+tap2eat-ops-kiambu-kitchen-reports
+Jan 30th at 2:18 PM
+Kitchen :  Kiambu Kitchen
+School: Kahunira Comprehensive School
+Menu : White Rice & Beans
+Date:2026-01-30
+Projected no of kids: 745
+Actual meals served:  730
+Successful Taps: 668
+F4E /School/Sponsored Others: 62
+Teachers:  0
+Staff meals: 4
+Failed taps: 21
+New registration: 2
+New tags replaced: 2
+Food Remaining:
+Rice: 6Kgs
+Stew: 6 Kgs
+No. of kids who missed food: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:43
+To: 30 Jan 2026, 13:35:48
+Comment 1: Food was well prepared,hot, delicious and arrived on time.
+Comment 2: Queue management was well executed by teacher on duty to eliminate long wait time.
+Comment 3: Failed taps increased by 7, yesterday we had 14 failed taps while today we had 21,this means that some parents didn't top up their accounts.
+Comment 4:730 actual meals served today a decrease from 743 served yesterday, majority of students didn't turn up for tapping.
+Next Day's Projection:
+Students: 740
+Teachers: 0
+Staff: 4
+Comment on Projection: We are expecting the same turn out as today.
+Report sent by: @Mwangi Mary Kahunira Comprehensive
+School Post Tapping Report - Kiambu Kitchen
+WORKFLOW 
+tap2eat-ops-kiambu-kitchen-reports
+Jan 30th at 1:52 PM
+Kitchen :  Kiambu Kitchen
+School: Kahunira Secondary School
+Menu : White Rice & Beans
+Date:2026-01-30
+Projected no of kids: 160
+Actual meals served:  164
+Successful Taps: 164
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 3
+Failed taps: 3
+New registration: 1
+New tags replaced: 0
+Food Remaining:
+Rice: 0Kgs
+Stew: 0 Kgs
+No. of kids who missed food: 0
+Tapping Time:
+Started at: 30 Jan 2026, 13:00:55
+To: 30 Jan 2026, 13:30:01
+Comment 1: Food was delicious
+Comment 2: Line was well managed by TOD
+Comment 3: Failed taps decreased from 6 to 3, parents topped up on time
+Comment 4:Meal served today increased from 154 to 164, parents paid on time
+Next Day's Projection:
+Students: 160
+Teachers: 0
+Staff: 3
+Comment on Projection: Expecting students who had failed taps to pay on time
+Report sent by: @Tapper kahunira secondary
+School Post Tapping Report - Kiambu Kitchen
+WORKFLOW 
+tap2eat-ops-kiambu-kitchen-reports
+Jan 30th at 1:48 PM
+Kitchen :  Kiambu Kitchen
+School: Kiababu Primary School
+Menu : Rice and beans
+Date:2026-01-30
+Projected no of kids: 265
+Actual meals served:  256
+Successful Taps: 230
+F4E /School/Sponsored Others: 26
+Teachers:  0
+Staff meals: 2
+Failed taps: 7
+New registration: 0
+New tags replaced: 0
+Food Remaining:
+Rice: 3Kgs
+Stew: 3 Kgs
+No. of kids who missed food: 0
+Tapping Time:
+Started at: 30 Jan 2026, 12:40:36
+To: 30 Jan 2026, 13:30:50
+Comment 1: The food was delicious
+Comment 2: Queue was neat with the help of the teacher on duty
+Comment 3: Failed taps decreased from 9 to 7 as some parents managed to pay on Time
+Comment 4:Successful taps decreased from 261 to 255 as some parents did not manage to pay on Time
+Next Day's Projection:
+Students: 260
+Teachers: 0
+Staff: 2
+Comment on Projection: Expecting more kids to report tomorrow
+Report sent by: @kiaibabu primary school
+School Post Tapping Report - Kiambu Kitchen
+WORKFLOW 
+tap2eat-ops-kiambu-kitchen-reports
+Jan 30th at 2:16 PM
+Kitchen :  Kiambu Kitchen
+School: Githunguri Technical & Secondary School
+Menu : Rice and beans
+Date:2026-01-30
+Projected no of kids: 227
+Actual meals served:  209
+Successful Taps: 209
+F4E /School/Sponsored Others: 0
+Teachers:  0
+Staff meals: 2
+Failed taps: 11
+New registration: 1
+New tags replaced: 2
+Food Remaining:
+Rice: 5Kgs
+Stew: 6 Kgs
+No. of kids who missed food: 0
+Tapping Time:
+Started at: 30 Jan 2026, 13:30:45
+To: 30 Jan 2026, 14:05:52
+Comment 1: Rice and beans
+Comment 2: The queue was well manageable
+Comment 3: Failed taps today was 11 which is a decrease compared from 10 to 11parents didn't top up
+Comment 4:The actual meal served today was 209 which is a decrease compared from 210 to 209 parents didn't top up
+Next Day's Projection:
+Students: 220
+Teachers: 0
+Staff: 2
+Comment on Projection: We expect a rise of successful taps tomorrow
+Report sent by: @Yvonne mugure, Githunguri Technical And Secondary School , Tapper
+
+IMG_20260130_141259.jpg
+Shared by Yvonne Mugure- Githunguri 

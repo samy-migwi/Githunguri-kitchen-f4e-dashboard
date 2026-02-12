@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Data Entry for Schools</h1>
+
+        <!-- Data Table -->
+        <div class="mt-4">
+            <h3>Existing Entries</h3>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>School</th>
+                        <th>Date</th>
+                        <th>Lat</th>
+                        <th>Lon</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="entries">
+                    {% for entry in entries %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ entry['School'] }}</td>
+                        <td>{{ entry['Date'] }}</td>
+                        <td>{{ entry['lat'] }}</td>
+                        <td>{{ entry['lon'] }}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editEntry({{ loop.index0 }})">Edit</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add Entry Form -->
+        <div class="mt-5">
+            <h3>Add New Entry</h3>
+            <form id="add-entry-form">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="school" class="form-label">School Name</label>
+                        <input type="text" id="school" name="School" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" id="date" name="Date" class="form-control" required>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="addEntry()">Add Entry</button>
+            </form>
+        </div>
+
+        <!-- Export Button -->
+        <div class="mt-4">
+            <button class="btn btn-success" onclick="exportData()">Export to CSV</button>
+        </div>
+    </div>
+
+    <script>
+        function addEntry() {
+            const form = document.getElementById('add-entry-form');
+            const formData = new FormData(form);
+            const entry = {};
+            formData.forEach((value, key) => {
+                entry[key] = value;
+            });
+
+            fetch('/add_entry', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(entry)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                location.reload();
+            });
+        }
+
+        function editEntry(index) {
+            const updatedData = prompt('Enter updated data as JSON:');
+            if (!updatedData) return;
+
+            fetch(`/edit_entry/${index}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: updatedData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    alert(data.message);
+                    location.reload();
+                }
+            });
+        }
+
+        function exportData() {
+            fetch('/export')
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            });
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
