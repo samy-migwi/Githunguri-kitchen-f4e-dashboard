@@ -20,3 +20,15 @@ services:
       command: python src/dashex.py
       environment:
         - PYTHONUNBUFFERED=1
+  dash:
+      build: .
+      container_name: main_dashboard
+      ports:
+        - "8052:8052"
+      volumes:
+        - .:/src
+        #gcp credentials from my local machine to the container
+        - ${APPDATA}/gcloud:/root/.config/gcloud
+      command: python src/dashboard.py
+      environment:
+        - PYTHONUNBUFFERED=1

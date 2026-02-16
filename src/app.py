@@ -9,8 +9,8 @@ from dash.exceptions import PreventUpdate
 from plotly.subplots import make_subplots
 
 # Loading your data
-#df = pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/dfw1w2w3.csv")
-df=pd.read_csv(r"C:\Users\Administrator\Desktop\ds\f4e\githunguri1\Githunguri-kitchen-f4e-dashboard\data\data_processed\df_upto_09_01_26.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/dfw1w2w3.csv")
+#df=pd.read_csv(r"C:\Users\Administrator\Desktop\ds\f4e\githunguri1\Githunguri-kitchen-f4e-dashboard\data\data_processed\df_upto_30_01_26.csv")
 dmap =pd.read_csv("https://raw.githubusercontent.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/main/data/map2.csv")
 
 # Convert 'Date' column to datetime with the correct format
@@ -99,11 +99,13 @@ app.title = "Githunguri Food4Education Dashboard"
 app.layout = html.Div([
     html.H1("Githunguri Food4Education Dashboard", style={'textAlign': 'center', 'color': 'white', 'backgroundColor': '#2c3e50', 'padding': '20px'}),
     html.Div([
-        dcc.Dropdown(
-            id='date-dropdown',
-            options=[{'label': date, 'value': date} for date in available_dates],
-            value=available_dates[0],  # Default to the first available date
-            clearable=False,
+        dcc.DatePickerSingle(
+            id='date-picker',
+            min_date_allowed=df['Date'].min(),
+            max_date_allowed=df['Date'].max(),
+            initial_visible_month=df['Date'].max(),
+            date=df['Date'].max(),  # Default to latest available date
+            display_format='YYYY-MM-DD',
             style={'width': '50%', 'margin': '10px', 'backgroundColor': '#ecf0f1'}
         ),
         dcc.Dropdown(
