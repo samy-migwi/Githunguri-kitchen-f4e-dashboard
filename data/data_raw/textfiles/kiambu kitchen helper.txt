@@ -1,6 +1,6 @@
 Kiambu kitchen
 
-Kahunira OR Ciiko OR Githunguri OR Kiababu in:#tap2eat-ops-kiambu-kitchen-reports before:2026-01-16 after:2026-01-14
+Kamondo OR magugu OR Lioki OR Karia OR Kiairia OR Gathanji OR Ngemwa OR Kahunira OR Ciiko OR Githunguri OR Kiababu in:#tap2eat-ops-kiambu-kitchen-reports before:2026-01-05 after:2026-01-03
 
 
 
