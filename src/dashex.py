@@ -83,7 +83,33 @@ SCHOOLS_LIST = [
     "Lioki Comprehensive School",
     "P.C.E.A Karia Secondary School",
     "Kiababu Primary School",
-    "St. Vincent Lioki Secondary School"
+    "St. Vincent Lioki Secondary School",
+    "Riara Primary",
+    "Riara Secondary",
+    "Kibubuti Primary School",
+    "Kiambaa Mixed Secondary",
+    "Kiambaa Comprehensive School",
+    "Karuri Comprehensive School",
+    "Karuri Secondary School",
+    "Kibathi Comprehensive School",
+    "Raini Comprehensive School",
+    "Kawaida Secondary",
+    "Kawaida Comprehensive School",
+    "St. Augustine Gatono Primary",
+    "Gatatha Comprehensive School",
+    "Njenga Karume Comprehensive School",
+    "Cianda Secondary School",
+    "Loreto Primary",
+    "Mungai Chengecha Primary",
+    "Muchatha Comprehensive School",
+    "Muchatha Secondary",
+    "Muongoiya Comprehensive School",
+    "Muongoiya Secondary",
+    "Mayuyu Comprehensive School",
+    "Waguthu Comprehensive School",
+    "St. Joseph Gathanga Secondary School",
+    "Chief Wandie Primary School"
+
 ]
 
 

@@ -2,7 +2,10 @@ Kiambu kitchen
 
 Kamondo OR magugu OR Lioki OR Karia OR Kiairia OR Gathanji OR Ngemwa OR Kahunira OR Ciiko OR Githunguri OR Kiababu in:#tap2eat-ops-kiambu-kitchen-reports before:2026-01-05 after:2026-01-03
 
+hii ndio in kula
 
+ 
+in:#tap2eat-ops-kiambu-kitchen-reports before:2026-01-06 after:2026-01-03 School Post Tapping Report - Kiambu Kitchen [Kamondo OR Magugu OR Lioki OR Karia OR Kiairia OR Gathanji OR Ngemwa OR Kahunira OR Ciiko OR Githunguri OR Kiababu]
 
 
 
@@ -11,4 +14,4 @@ Kamondo OR magugu OR Lioki OR Karia OR Kiairia OR Gathanji OR Ngemwa OR Kahunira
 
 Githunguri kitchen
 
-in:#tap2eat-ops-githunguri-report-center "Githunguri 1" before:2026-01-16 after:2026-01-14
+in:#tap2eat-ops-githunguri-report-center before:2026-01-16 after:2026-01-14 School Post Tapping Report - Githunguri
