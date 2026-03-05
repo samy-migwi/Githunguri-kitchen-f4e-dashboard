@@ -13,7 +13,8 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.title = "Food for Education – Githunguri Kitchen Dashboard"
 
 # ─── LOAD DATA ────────────────────────────────────────────────────────────────
-df = pd.read_csv("gs://f4e_data_processed_csv/df_upto_30_01_26.csv")
+df = pd.read_csv("gs://f4e_data_processed_csv/df_upto_30_01_26.csv") #remote db
+#df=pd.read_csv("C:\\Users\\Administrator\\Desktop\\ds\\f4e\\githunguri1\\Githunguri-kitchen-f4e-dashboard\\data\\data_processed\\jan_12_26_clean.csv")
 dmap = pd.read_csv("gs://f4e_data_processed_csv/map2.csv")
 
 # Clean column names in dmap (remove spaces and standardize)
