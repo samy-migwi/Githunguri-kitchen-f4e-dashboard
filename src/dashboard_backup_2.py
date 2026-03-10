@@ -24,15 +24,7 @@ dmap = pd.read_csv("gs://f4e_data_processed_csv/map2.csv")
 dmap.columns = dmap.columns.str.strip().str.replace(' ', '_').str.replace('__', '_')
 
 # ─── Date Options ─────────────────────────────────────────────────────────────
-def _parse_date(d):
-    for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%-m/%-d/%Y"):
-        try:
-            return datetime.strptime(d, fmt)
-        except ValueError:
-            pass
-    return datetime.min
-
-available_dates = sorted(df["Date"].unique(), key=_parse_date)
+available_dates = sorted(df["Date"].unique(), key=lambda x: datetime.strptime(x, "%Y-%m-%d"))
 date_options = [{"label": d, "value": d} for d in available_dates]
 
 # ─── Colour Palette ───────────────────────────────────────────────────────────
@@ -320,13 +312,7 @@ def get_map_html(selected_school=None):
     return m._repr_html_()
 
 
-# ─── Startup Diagnostics ──────────────────────────────────────────────────────
-print(f"✅ Loaded {len(df)} rows | Date range: {available_dates[0]} → {available_dates[-1]}")
-print(f"   Kitchens  : {sorted(df['Kitchen'].dropna().unique().tolist())}")
-print(f"   SchoolType: {sorted(df['School_Type'].dropna().unique().tolist())}")
-print(f"   Date sample: {df['Date'].iloc[0]!r}  (detected format: {'YYYY-MM-DD' if '-' in str(df['Date'].iloc[0]) else 'M/D/YYYY'})")
-
-
+# ─── KPI Card Helper ──────────────────────────────────────────────────────────
 def kpi_card(card_id, icon, label, color):
     return html.Div([
         html.Div([
@@ -385,30 +371,38 @@ app.layout = html.Div([
                                                "marginBottom": "8px", "paddingLeft": "4px"}),
             dcc.DatePickerSingle(
                 id="date-picker",
-                date=_parse_date(available_dates[-1]).strftime("%Y-%m-%d"),
-                min_date_allowed=_parse_date(available_dates[0]),
-                max_date_allowed=_parse_date(available_dates[-1]),
+                date=datetime.strptime(available_dates[-1], "%Y-%m-%d").strftime("%Y-%m-%d"),
+                min_date_allowed=datetime.strptime(available_dates[0], "%Y-%m-%d"),
+                max_date_allowed=datetime.strptime(available_dates[-1], "%Y-%m-%d"),
                 display_format="D MMM YYYY",
                 calendar_orientation="vertical",
                 style={"width": "180px", "transform": "scale(0.82)", "transformOrigin": "top left"},
                 className="dash-datepicker",
             ),
+            # Show available dates as pills
+            html.Div("Available dates:", style={"fontSize": "10px", "color": C["muted"],
+                                                "marginTop": "16px", "marginBottom": "8px",
+                                                "fontWeight": "600", "letterSpacing": "0.08em",
+                                                "textTransform": "uppercase"}),
+            html.Div([
+                html.Div(
+                    datetime.strptime(d, "%Y-%m-%d").strftime("%d %b"),
+                    id={"type": "date-pill", "index": d},
+                    n_clicks=0,
+                    style={
+                        "padding": "4px 8px",
+                        "borderRadius": "6px",
+                        "fontSize": "10px",
+                        "cursor": "pointer",
+                        "background": C["border"],
+                        "color": C["muted"],
+                        "fontWeight": "500",
+                        "whiteSpace": "nowrap",
+                    }
+                ) for d in available_dates
+            ], style={"display": "flex", "flexWrap": "wrap", "gap": "4px"}),
 
         ], style={"padding": "16px 12px"}),
-
-        html.Div([
-            html.Div("CLUSTER FILTER", style={"fontSize": "10px", "fontWeight": "600",
-                                               "color": C["muted"], "letterSpacing": "0.1em",
-                                               "marginBottom": "8px", "paddingLeft": "4px"}),
-            dcc.Checklist(
-                id="cluster-filter",
-                options=[{"label": f" {c}", "value": c} for c in sorted(df["Cluster"].dropna().unique())],
-                value=list(df["Cluster"].dropna().unique()),
-                labelStyle={"display": "block", "marginBottom": "8px",
-                            "color": C["text"], "fontSize": "12px", "cursor": "pointer"},
-                inputStyle={"marginRight": "8px", "accentColor": C["teal"]},
-            ),
-        ], style={"padding": "4px 12px 16px"}),
 
         html.Div([
             html.Div("KITCHEN FILTER", style={"fontSize": "10px", "fontWeight": "600",
@@ -416,8 +410,11 @@ app.layout = html.Div([
                                                "marginBottom": "8px", "paddingLeft": "4px"}),
             dcc.Checklist(
                 id="kitchen-filter",
-                options=[{"label": f" {k}", "value": k} for k in sorted(df["Kitchen"].dropna().unique())],
-                value=list(df["Kitchen"].dropna().unique()),
+                options=[
+                    {"label": " Githunguri", "value": "Githunguri"},
+                    {"label": " Kiambu Kitchen", "value": "kiambu kitchen"},
+                ],
+                value=["Githunguri", "kiambu kitchen"],
                 labelStyle={"display": "block", "marginBottom": "8px",
                             "color": C["text"], "fontSize": "12px", "cursor": "pointer"},
                 inputStyle={"marginRight": "8px", "accentColor": C["teal"]},
@@ -430,8 +427,11 @@ app.layout = html.Div([
                                             "marginBottom": "8px", "paddingLeft": "4px"}),
             dcc.Checklist(
                 id="school-type-filter",
-                options=[{"label": f" {t}", "value": t} for t in sorted(df["School_Type"].dropna().unique())],
-                value=list(df["School_Type"].dropna().unique()),
+                options=[
+                    {"label": " Primary", "value": "Primary"},
+                    {"label": " Secondary", "value": "Secondary"},
+                ],
+                value=["Primary", "Secondary"],
                 labelStyle={"display": "block", "marginBottom": "8px",
                             "color": C["text"], "fontSize": "12px", "cursor": "pointer"},
                 inputStyle={"marginRight": "8px", "accentColor": C["teal"]},
@@ -681,17 +681,14 @@ app.layout = html.Div([
 
 # ─── Callbacks ────────────────────────────────────────────────────────────────
 
-def filter_df(date_str, kitchens, school_types, clusters=None):
+def filter_df(date_str, kitchens, school_types):
     """Return filtered dataframe for the selected date."""
-    mask = (
+    fdf = df[
         (df["Date"] == date_str) &
         (df["Kitchen"].isin(kitchens)) &
-        (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
-    )
-    if clusters:
-        mask &= df["Cluster"].isin(clusters)
-    return df[mask]
+        (df["School_Type"].isin(school_types))
+    ]
+    return fdf
 
 
 @app.callback(
@@ -720,24 +717,16 @@ def filter_df(date_str, kitchens, school_types, clusters=None):
     Input("kitchen-filter", "value"),
     Input("school-type-filter", "value"),
     Input("school-dropdown", "value"),
-    Input("cluster-filter", "value"),
 )
-def update_all(selected_date, kitchens, school_types, selected_school, clusters):
-    if not selected_date or not kitchens or not school_types or not clusters:
+def update_all(selected_date, kitchens, school_types, selected_school):
+    if not selected_date or not kitchens or not school_types:
         raise PreventUpdate
 
-    # Date picker gives YYYY-MM-DD; detect data format and match accordingly
+    # Convert date picker format (YYYY-MM-DD) → notebook format (M/D/YYYY)
     dt = datetime.strptime(selected_date, "%Y-%m-%d")
-    # Auto-detect date format in data
-    _sample = df["Date"].dropna().iloc[0] if not df["Date"].dropna().empty else ""
-    if "-" in str(_sample) and str(_sample).index("-") == 4:
-        # Data uses YYYY-MM-DD format
-        date_str = selected_date  # e.g. "2026-01-05"
-    else:
-        # Data uses M/D/YYYY format (old format)
-        date_str = f"{dt.month}/{dt.day}/{dt.year}"
+    date_str = f"{dt.month}/{dt.day}/{dt.year}"  # Cross-platform compatible
 
-    fdf = filter_df(date_str, kitchens, school_types, clusters)
+    fdf = filter_df(date_str, kitchens, school_types)
 
     # Generate map with selected school highlighted
     map_html = get_map_html(selected_school)
@@ -798,9 +787,8 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
 
     # Per-kitchen meals
     kit_gb = fdf.groupby("Kitchen")["Actual_Meals_Served"].sum()
-    all_kitchens = sorted(df["Kitchen"].dropna().unique())
-    g_meals = f"{kit_gb.get(all_kitchens[0], 0):,}" if len(all_kitchens) > 0 else "—"
-    k_meals = f"{kit_gb.get(all_kitchens[1], 0):,}" if len(all_kitchens) > 1 else "—"
+    g_meals = f"{kit_gb.get('Githunguri', 0):,}"
+    k_meals = f"{kit_gb.get('kiambu kitchen', 0):,}"
 
     header_sub  = f"{dt.strftime('%A, %d %B %Y')} · {len(fdf)} schools reporting"
     if selected_school:
@@ -823,10 +811,9 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         school_trend = df[
             (df["School"] == selected_school) &
             (df["Kitchen"].isin(kitchens)) &
-            (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
+            (df["School_Type"].isin(school_types))
         ].copy()
-        school_trend["Date_parsed"] = pd.to_datetime(school_trend["Date"], infer_datetime_format=True)
+        school_trend["Date_parsed"] = pd.to_datetime(school_trend["Date"], format="%m/%d/%Y")
         school_trend = school_trend.sort_values("Date_parsed")
 
         bar_title = f"{selected_school} — Daily Trend"
@@ -834,51 +821,48 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
 
         fig_bar = go.Figure()
         fig_bar.add_trace(go.Bar(
-            name="Projected", x=school_trend["Date_parsed"], y=school_trend["Projected_Kids"],
+            name="Projected", x=school_trend["Date"], y=school_trend["Projected_Kids"],
             marker_color=C["blue"], marker_line_width=0, opacity=0.85,
             text=school_trend["Projected_Kids"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#FFFFFF"),  # White text
         ))
         fig_bar.add_trace(go.Bar(
-            name="Actual Meals", x=school_trend["Date_parsed"], y=school_trend["Actual_Meals_Served"],
+            name="Actual Meals", x=school_trend["Date"], y=school_trend["Actual_Meals_Served"],
             marker_color=C["teal"], marker_line_width=0,
             text=school_trend["Actual_Meals_Served"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#FFFFFF"),  # White text
         ))
         fig_bar.add_trace(go.Bar(
-            name="Failed Taps", x=school_trend["Date_parsed"], y=school_trend["Failed_Taps"],
+            name="Failed Taps", x=school_trend["Date"], y=school_trend["Failed_Taps"],
             marker_color=C["amber"], marker_line_width=0, opacity=0.85,
             text=school_trend["Failed_Taps"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#FFFFFF"),  # White text
         ))
-
+        
         # Highlight selected date
-        sel_dt = pd.to_datetime(date_str, infer_datetime_format=True)
-        if sel_dt in school_trend["Date_parsed"].values:
-            sel_actual = school_trend.loc[school_trend["Date_parsed"] == sel_dt, "Actual_Meals_Served"]
-            if not sel_actual.empty:
-                fig_bar.add_shape(
-                    type="rect",
-                    x0=sel_dt - pd.Timedelta(hours=12), x1=sel_dt + pd.Timedelta(hours=12),
-                    y0=0, y1=school_trend["Actual_Meals_Served"].max() * 1.1,
-                    fillcolor=C["red"], opacity=0.12, line_width=0,
-                )
-                fig_bar.add_annotation(
-                    x=sel_dt, y=school_trend["Actual_Meals_Served"].max() * 1.15,
-                    text="Selected", showarrow=False,
-                    font=dict(color=C["red"], size=11),
-                )
+        if date_str in school_trend["Date"].values:
+            x_pos = list(school_trend["Date"]).index(date_str)
+            fig_bar.add_shape(
+                type="line",
+                x0=x_pos - 0.4, x1=x_pos + 0.4,
+                y0=0, y1=school_trend["Actual_Meals_Served"].max() * 1.1,
+                line=dict(color=C["red"], width=3, dash="dot"),
+            )
+            fig_bar.add_annotation(
+                x=date_str, y=school_trend["Actual_Meals_Served"].max() * 1.15,
+                text="Selected",
+                showarrow=False,
+                font=dict(color=C["red"], size=11),
+            )
             
         fig_bar.update_layout(**{k: v for k, v in BAR_LAYOUT.items() if k != 'xaxis'},
             barmode="group",
+            xaxis_tickangle=-40,
             bargap=0.2, bargroupgap=0.05,
             showlegend=True,
             yaxis_title="Count",
             xaxis=dict(
-                tickformat="%d %b",
-                tickangle=-40,
-                tickfont=dict(color="#111827", size=10),
-                dtick="D1",
+                tickfont=dict(color="#FFFFFF", size=10),  # White x-axis labels
             ),
         )
     else:
@@ -965,8 +949,7 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         school_prec_data = df[
             (df["School"] == selected_school) &
             (df["Kitchen"].isin(kitchens)) &
-            (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
+            (df["School_Type"].isin(school_types))
         ].copy()
         school_prec_data["Precision"] = school_prec_data["Actual_Meals_Served"] / school_prec_data["Projected_Kids"]
         school_prec_data = school_prec_data.sort_values("Date")
@@ -1013,8 +996,7 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         school_failed_data = df[
             (df["School"] == selected_school) &
             (df["Kitchen"].isin(kitchens)) &
-            (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
+            (df["School_Type"].isin(school_types))
         ].copy()
         school_failed_data = school_failed_data.sort_values("Date")
         
@@ -1059,8 +1041,7 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         school_lunch_data = df[
             (df["School"] == selected_school) &
             (df["Kitchen"].isin(kitchens)) &
-            (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
+            (df["School_Type"].isin(school_types))
         ].copy()
         school_lunch_data = school_lunch_data.sort_values("Date")
         
@@ -1111,10 +1092,9 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         trend = df[
             (df["School"] == selected_school) &
             (df["Kitchen"].isin(kitchens)) &
-            (df["School_Type"].isin(school_types)) &
-        (df["Cluster"].isin(clusters))
+            (df["School_Type"].isin(school_types))
         ].copy()
-        trend["Date_parsed"] = pd.to_datetime(trend["Date"], infer_datetime_format=True)
+        trend["Date_parsed"] = pd.to_datetime(trend["Date"], format="%m/%d/%Y")
         trend = trend.sort_values("Date_parsed")
         
         fig_trend = go.Figure()
@@ -1133,7 +1113,7 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
             fillcolor="rgba(0,201,167,0.09)",
         ))
         # Highlight selected date
-        sel_date_parsed = pd.to_datetime(date_str, infer_datetime_format=True)
+        sel_date_parsed = pd.to_datetime(date_str, format="%m/%d/%Y")
         if sel_date_parsed in trend["Date_parsed"].values:
             sel_row = trend[trend["Date_parsed"] == sel_date_parsed]
             if not sel_row.empty:
@@ -1153,16 +1133,12 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
     else:
         # Show aggregate trend for all schools
         trend = (
-            df[
-                (df["Kitchen"].isin(kitchens)) &
-                (df["School_Type"].isin(school_types)) &
-                (df["Cluster"].isin(clusters))
-            ]
+            df[(df["Kitchen"].isin(kitchens)) & (df["School_Type"].isin(school_types))]
             .groupby("Date")[["Projected_Kids", "Actual_Meals_Served"]]
             .sum()
             .reset_index()
         )
-        trend["Date_parsed"] = pd.to_datetime(trend["Date"], infer_datetime_format=True)
+        trend["Date_parsed"] = pd.to_datetime(trend["Date"], format="%m/%d/%Y")
         trend = trend.sort_values("Date_parsed")
 
         fig_trend = go.Figure()
@@ -1182,7 +1158,7 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
             fillcolor="rgba(0,201,167,0.09)",
         ))
         # Highlight selected date
-        sel_date_parsed = pd.to_datetime(date_str, infer_datetime_format=True)
+        sel_date_parsed = pd.to_datetime(date_str, format="%m/%d/%Y")
         if sel_date_parsed in trend["Date_parsed"].values:
             sel_actual = trend[trend["Date_parsed"] == sel_date_parsed]["Actual_Meals_Served"].values[0]
             fig_trend.add_trace(go.Scatter(
