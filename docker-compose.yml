@@ -1,34 +1,84 @@
+version: '3'
+
 services:
   app:
     build: .
     container_name: g1_dashboard
     ports:
-      -  "5001:8051"
+      - "5001:8051"
     volumes:
       - .:/src
+      - ./data:/opt/airflow/data
     command: python src/app.py     
     environment:
       - PYTHONUNBUFFERED=1
 
-  sraper:
-      build: .
-      container_name: g1_scraper
-      ports:
-        - "8050:8050"
-      volumes:
-        - .:/src       
-      command: python src/dashex.py
-      environment:
-        - PYTHONUNBUFFERED=1
+  scraper:
+    build: .
+    container_name: g_scraper
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/src       
+    command: python src/dashex.py
+    environment:
+      - PYTHONUNBUFFERED=1
+
   dash:
-      build: .
-      container_name: main_dashboard
-      ports:
-        - "8052:8052"
-      volumes:
-        - .:/src
-        #gcp credentials from my local machine to the container
-        - ${APPDATA}/gcloud:/root/.config/gcloud
-      command: python src/dashboard.py
-      environment:
-        - PYTHONUNBUFFERED=1
+    build: .
+    container_name: main_dashboard
+    ports:
+      - "8052:8052"
+    volumes:
+      - .:/src
+      - ./data:/opt/airflow/data
+      - ${APPDATA}/gcloud:/root/.config/gcloud
+      - ./data:/data   # mount local data folder
+    command: python src/dashboard.py
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  webserver:
+    image: apache/airflow:2.7.3
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY=your_fernet_key_here
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  scheduler:
+    image: apache/airflow:2.7.3
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    command: scheduler
+
+volumes:
+  postgres_data:

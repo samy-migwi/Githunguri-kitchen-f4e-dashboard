@@ -13,9 +13,14 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.title = "Food for Education – Githunguri Kitchen Dashboard"
 
 # ─── LOAD DATA ────────────────────────────────────────────────────────────────
-df = pd.read_csv("gs://f4e_data_processed_csv/df_upto_feb_24_26.csv") #remote db
-#df=pd.read_csv("C:\\Users\\Administrator\\Desktop\\ds\\f4e\\githunguri1\\Githunguri-kitchen-f4e-dashboard\\data\\data_processed\\jan_12_26_clean.csv")
+#df = pd.read_csv("gs://f4e_data_processed_csv/df_upto_feb_24_26.csv") #remote 
+
+#local db with mounted folder 
+#df=pd.read_csv(r"C:\Users\Administrator\Desktop\ds\f4e\githunguri1\Githunguri-kitchen-f4e-dashboard\data\data_processed\mar_03_26_clean.csv")
 #df=pd.read_csv()
+#df = pd.read_csv(r"C:\\Users\\Administrator\\Desktop\\ds\\f4e\\githunguri1\\Githunguri-kitchen-f4e-dashboard\\data\\data_processed\\mar_03_26_clean.csv")
+df=pd.read_csv("/opt/airflow/data/data_processed/df_upto_mar_03_26.csv")
+
 
 #https://github.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/blob/d1999890d4027d30536320f4c45fb49916d1f317/data/data_processed/df_upto_feb_24_26.csv
 dmap = pd.read_csv("gs://f4e_data_processed_csv/map2.csv")
