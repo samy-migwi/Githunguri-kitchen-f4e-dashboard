@@ -19,7 +19,7 @@ app.title = "Food for Education – Githunguri Kitchen Dashboard"
 #df=pd.read_csv(r"C:\Users\Administrator\Desktop\ds\f4e\githunguri1\Githunguri-kitchen-f4e-dashboard\data\data_processed\mar_03_26_clean.csv")
 #df=pd.read_csv()
 #df = pd.read_csv(r"C:\\Users\\Administrator\\Desktop\\ds\\f4e\\githunguri1\\Githunguri-kitchen-f4e-dashboard\\data\\data_processed\\mar_03_26_clean.csv")
-df=pd.read_csv("/opt/airflow/data/data_processed/df_upto_mar_03_26.csv")
+df=pd.read_csv("/opt/airflow/data/data_processed/df_upto_mar_24_26.csv")
 
 
 #https://github.com/samy-migwi/Githunguri-kitchen-f4e-dashboard/blob/d1999890d4027d30536320f4c45fb49916d1f317/data/data_processed/df_upto_feb_24_26.csv
