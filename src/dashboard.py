@@ -840,21 +840,21 @@ def update_all(selected_date, kitchens, school_types, selected_school, clusters)
         fig_bar = go.Figure()
         fig_bar.add_trace(go.Bar(
             name="Projected", x=school_trend["Date_parsed"], y=school_trend["Projected_Kids"],
-            marker_color=C["blue"], marker_line_width=0, opacity=0.85,
+            marker_color="blue", marker_line_width=0, opacity=0.85,
             text=school_trend["Projected_Kids"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#111827"),
         ))
         fig_bar.add_trace(go.Bar(
             name="Actual Meals", x=school_trend["Date_parsed"], y=school_trend["Actual_Meals_Served"],
-            marker_color=C["teal"], marker_line_width=0,
+            marker_color="green", marker_line_width=0,
             text=school_trend["Actual_Meals_Served"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#111827"),
         ))
         fig_bar.add_trace(go.Bar(
             name="Failed Taps", x=school_trend["Date_parsed"], y=school_trend["Failed_Taps"],
-            marker_color=C["amber"], marker_line_width=0, opacity=0.85,
+            marker_color="orange", marker_line_width=0, opacity=0.85,
             text=school_trend["Failed_Taps"], textposition="outside",
-            textfont=dict(size=9, color="#FFFFFF"),
+            textfont=dict(size=9, color="#111827"),
         ))
 
         # Highlight selected date
